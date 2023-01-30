@@ -6,8 +6,6 @@ INSPECT ELEMENT
 
 soup_page = bs(html_page, "html.parser")
 quotes = soup_page.findAll("div", {"class":"author"}) 
-# 
-
 
 lst = []
 for q in quotes:

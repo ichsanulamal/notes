@@ -1,3 +1,5 @@
+https://docs.openbridge.com/en/articles/1856793-how-to-set-up-google-bigquery-creating-and-configuring-service-accounts-in-google-cloud-console
+
 https://www.cloudskillsboost.google/focuses/3460?parent=catalog
 
 https://github.com/GoogleCloudPlatform/professional-services/tree/main/examples/dataflow-python-examples/batch-examples/cookbook-examples/pipelines

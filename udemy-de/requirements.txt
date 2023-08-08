@@ -32,7 +32,7 @@ setuptools-rust==0.12.1
 six==1.16.0
 soupsieve==2.2.1
 toml==0.10.2
-Twisted==21.2.0
+Twisted==22.10.0
 twisted-iocpsupport==1.0.1
 w3lib==1.22.0
 zope.interface==5.4.0

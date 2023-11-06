@@ -1,0 +1,47 @@
+[Sunni]
+
+Al-Irsyad Al-Islamiyyah
+Al Ittihadiyah
+Alkhairaat
+Al Washliyah
+Darud Da'wah wal Irsyad (DDI)
+Dewan Dakwah Islamiyah Indonesia (DDII)
+Hidayatullah
+Jamiat Kheir
+Mathla'ul Anwar
+Muhammadiyah (MU)
+Nahdlatul Ulama (NU)
+Nahdlatul Wathan (NW)
+Persatuan Islam (Persis)
+Persatuan Tarbiyah Islamiyah (PERTI)
+Persatuan Umat Islam (PUI)
+Rabithah Alawiyah
+Wahdah Islamiyah
+
+[Syiah]
+Ahlulbait Indonesia (ABI)
+Ikatan Jamaah Ahlulbait Indonesia (Ijabi)
+
+[Lain-lain/nonafiliasi]
+Dewan Masjid Indonesia (DMI)
+Forum Umat Islam (FUI)
+Ikatan Cendekiawan Muslim Indonesia (ICMI)
+Ikatan Da'i Indonesia (Ikadi)
+Lembaga Persahabatan Ormas Islam Indonesia (LPOI)
+Lembaga Dakwah Islam Indonesia (LDII)
+Majelis Intelektual dan Ulama Muda Indonesia (MIUMI)
+Majelis Tafsir Al-Qur'an (MTA)
+Majelis Ulama Indonesia (MUI)
+Persatuan Islam Tionghoa Indonesia (PITI)
+Syarikat Islam (SI)
+Syarikat Islam Indonesia (SII)
+
+[Dibubarkan/dilarang]
+Front Pembela Islam (FPI)
+Gerakan Fajar Nusantara (Gafatar)
+Hizbut Tahrir Indonesia (HTI)
+Jamaah Ansharut Daulah (JAD)
+Jamaah Ansharusy Syariah (JAS)
+Jamaah Ansharut Tauhid (JAT)
+Jemaah Islamiyah (JI)
+Majelis Mujahidin Indonesia (MMI)

@@ -165,4 +165,4 @@ cython_debug/
 latest
 
 
-docker-compose/spark/spark-data
+docker-compose/spark/spark-data/

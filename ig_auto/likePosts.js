@@ -31,8 +31,6 @@ const LOGIN_URL = 'https://www.instagram.com/accounts/login/';
 //     await login(page, 'notesonidleness', 'j4cDGYp43Mf98YE!tLPP5bvgrJZSsSHygr@kTkYoH3#q%4^iW$');
 //   }
 
-  
-
   /* Per post */ 
 
   // await page.goto('https://www.instagram.com');
@@ -60,30 +58,8 @@ const LOGIN_URL = 'https://www.instagram.com/accounts/login/';
   await page.goto('https://www.instagram.com/notesonidleness/followers/');
   await page.waitForNavigation({ waitUntil: 'domcontentloaded' });
 
-  // Find the first scrollable element
-  const scrollableElement = await page.evaluate(() => {
-    // Get all elements on the page
-    const elements = document.querySelectorAll('*');
+  await autoScroll(page);
 
-    // Find the first element that has a scrollbar
-    for (const element of elements) {
-      // Check if the element has a vertical scrollbar
-      if (element.scrollHeight > element.clientHeight) {
-        return element;
-      }
-    }
-
-    // If no scrollable element is found, return null
-    return null;
-  });
-
-  if (scrollableElement) {
-    console.log('Found scrollable element:', scrollableElement);
-    // Perform actions on the scrollable element if needed
-  } else {
-    console.log('No scrollable element found.');
-  }
-  
   // Extract list of all username links
   // const usernames = await page.evaluate(() => {
   //   const usernameElements = document.querySelectorAll('span._ap3a');

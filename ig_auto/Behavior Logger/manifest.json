@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "User Behavior Logger",
+    "version": "1.0",
+    "description": "Logs user behavior on any website.",
+    "permissions": ["activeTab", "storage"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "host_permissions": ["<all_urls>"]
+  }
+  

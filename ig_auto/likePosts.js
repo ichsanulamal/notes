@@ -1,5 +1,11 @@
+require('dotenv').config();
+const username = process.env.username
+const password = process.env.password
+
+
 const puppeteer = require('puppeteer');
 const fs = require('fs').promises;
+
 
 const LOGIN_URL = 'https://www.instagram.com/accounts/login/';
 
@@ -28,7 +34,7 @@ const LOGIN_URL = 'https://www.instagram.com/accounts/login/';
 //     console.log('Already logged in.');
 //   } else {
 //     console.log('Not logged in. Logging in...');
-//     await login(page, 'notesonidleness', 'j4cDGYp43Mf98YE!tLPP5bvgrJZSsSHygr@kTkYoH3#q%4^iW$');
+//     await login(page, username, password);
 //   }
 
   /* Per post */ 
@@ -55,7 +61,7 @@ const LOGIN_URL = 'https://www.instagram.com/accounts/login/';
 //   }
 
   /* Followers */ 
-  await page.goto('https://www.instagram.com/notesonidleness/followers/');
+  await page.goto(`https://www.instagram.com/${username}/followers/`);
   await page.waitForNavigation({ waitUntil: 'domcontentloaded' });
 
   await autoScroll(page);

@@ -18,7 +18,7 @@ const LOGIN_URL = 'https://www.instagram.com/accounts/login/';
   const page = await browser.newPage();
 
   // Load cookies if available
-  const cookiesPath = './cookies.json';
+  const cookiesPath = './ig_cookies.json';
   try {
     const cookies = JSON.parse(await fs.readFile(cookiesPath, 'utf8'));
     await page.setCookie(...cookies);

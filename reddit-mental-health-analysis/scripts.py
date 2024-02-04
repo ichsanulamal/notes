@@ -28,9 +28,7 @@ reddit = praw.Reddit(
     user_agent = "my agent"
 )
 
-subreddits = ['depression']
-
-['EDAnonymous', 'addiction', 'alcoholism', 'adhd', 'anxiety', 'autism', 'bipolarreddit', 'bpd', 'depression', 'healthanxiety', 'lonely', 'ptsd', 'schizophrenia', 'socialanxiety', 'suicidewatch']
+subreddits = ['EDAnonymous', 'addiction', 'alcoholism', 'adhd', 'anxiety', 'autism', 'bipolarreddit', 'bpd', 'depression', 'healthanxiety', 'lonely', 'ptsd', 'schizophrenia', 'socialanxiety', 'suicidewatch']
 
 now = datetime.datetime.now()
 start_year = now.year

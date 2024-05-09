@@ -65,4 +65,4 @@ DIR = 'books'
 
 if __name__ == "__main__":
     # download top books
-    download_all_books(URL, DIR, 'rdf')
+    download_all_books(URL, DIR)

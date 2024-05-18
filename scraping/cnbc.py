@@ -62,8 +62,8 @@ for cat in categories:
     category_name, category_id = cat[0], cat[1]
 
     base_url = f"https://www.cnbcindonesia.com/{category_name}/indeks/{category_id}/"
-    start_date = pendulum.parse("2024-03-24")
-    end_date = pendulum.parse("2024-05-08")
+    start_date = pendulum.parse("2024-05-09")
+    end_date = pendulum.parse("2024-05-17")
 
     current_date = start_date
     while current_date <= end_date:

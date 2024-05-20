@@ -99,6 +99,9 @@ def main():
 
     df.to_csv("enterkomputer_raw.csv", index=False)
 
+    for col in df.columns:
+        df[col] = df[col].astype('str')
+
     table_id = "de_zoomcamp.enterkomputer_raw"
     pandas_gbq.to_gbq(
         dataframe=df,

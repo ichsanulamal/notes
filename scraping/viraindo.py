@@ -1,12 +1,15 @@
 import requests
+import os
 import pandas as pd
 from io import StringIO
 from datetime import datetime
 import pandas_gbq
 from google.oauth2 import service_account
 
+credentials_file = os.getenv("gcp_cred")
+
 credentials = service_account.Credentials.from_service_account_file(
-    "/home/al/projects/creds/ichsanul-dev-cc6f799c9121.json",
+    credentials_file,
     scopes=["https://www.googleapis.com/auth/cloud-platform"],
 )
 

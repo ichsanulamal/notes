@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 from datetime import datetime
 import json
@@ -7,8 +8,10 @@ from fake_useragent import UserAgent
 import pandas_gbq
 from google.oauth2 import service_account
 
+credentials_file = os.getenv("gcp_cred")
+
 credentials = service_account.Credentials.from_service_account_file(
-    "/home/al/projects/creds/ichsanul-dev-cc6f799c9121.json",
+    credentials_file,
     scopes=["https://www.googleapis.com/auth/cloud-platform"],
 )
 
@@ -100,7 +103,7 @@ def main():
     df.to_csv("enterkomputer_raw.csv", index=False)
 
     for col in df.columns:
-        df[col] = df[col].astype('str')
+        df[col] = df[col].astype("str")
 
     table_id = "de_zoomcamp.enterkomputer_raw"
     pandas_gbq.to_gbq(

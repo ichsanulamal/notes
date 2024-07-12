@@ -1,7 +1,3 @@
-tags:
-
----
-
 ### Constructing a Portfolio with Two Stocks
 
 #### Portfolio Weights

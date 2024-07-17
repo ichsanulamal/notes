@@ -18,11 +18,6 @@
 
 # ## Order determination:  AR(2) Example
 
-# In[1]:
-# If you have never installed them, uncomment the lines below and run it one time.
-
-# !pip install numpy pandas matplotlib statsmodels
-
 # In[2]:
 # Now we'll load packages.
 
@@ -118,12 +113,6 @@ model_ma2 = sm.tsa.ARIMA(r, order=(0, 0, 2)).fit()
 print(model_ma2.summary())
 
 # ## Real data is much harder
-
-# In[11]:
-# Fetch some test data from Yahoo! Finance
-# If you have never installed them, uncomment the lines below and run it one time.
-
-# !pip install yfinance pandas numpy matplotlib
 
 import yfinance as yf
 

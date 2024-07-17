@@ -1,3 +1,0 @@
-pip install beautifulsoup4 sqlalchemy pendulum pandas postgres lxml
-pip install pandas-gbq
-pip install fake-useragent

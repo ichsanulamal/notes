@@ -9,6 +9,7 @@ statsmodels
 matplotlib 
 nbformat
 plotly
+colour
 
 mplfinance
 yfinance

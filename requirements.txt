@@ -1,6 +1,7 @@
 pandas
 pandas-gbq
 
+pyarrow
 numpy 
 scipy 
 sympy
@@ -25,3 +26,9 @@ fake-useragent
 
 pendulum   
 lxml
+
+geopandas
+fiona 
+shapely
+pyproj 
+rtree 

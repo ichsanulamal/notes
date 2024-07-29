@@ -8,9 +8,10 @@ from fake_useragent import UserAgent
 import pandas_gbq
 from google.oauth2 import service_account
 
-credentials_file = os.getenv("GCP_CREDENTIALS")
+credentials_json = os.getenv("GCP_CREDENTIALS")
+credentials_info = json.loads(credentials_json)
 credentials = service_account.Credentials.from_service_account_info(
-    credentials_file,
+    credentials_info,
     scopes=["https://www.googleapis.com/auth/cloud-platform"],
 )
 

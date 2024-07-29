@@ -98,7 +98,7 @@ def main():
     df = pd.DataFrame(all_product_list)
     df["inserted_at"] = datetime.now().date()
 
-    df.to_csv("enterkomputer_raw.csv", index=False)
+    # df.to_csv("enterkomputer_raw.csv", index=False)
 
     for col in df.columns:
         df[col] = df[col].astype("str")

@@ -94,7 +94,7 @@ def main():
 
     combined_df["inserted_at"] = datetime.now().date()
 
-    combined_df.to_csv("viraindo_raw.csv", index=False)
+    # combined_df.to_csv("viraindo_raw.csv", index=False)
 
     table_id = "de_zoomcamp.viraindo_raw"
     pandas_gbq.to_gbq(

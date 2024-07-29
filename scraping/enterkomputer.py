@@ -5,36 +5,14 @@ import base64
 import json
 import requests
 from fake_useragent import UserAgent
-
 import pandas_gbq
+
 from google.oauth2 import service_account
-
-def read_gcp_sa_key_from_secret(secret_name):
-  """Reads a GCP Service Account key JSON from a GitHub Actions secret.
-
-  Args:
-    secret_name: The name of the GitHub Actions secret.
-
-  Returns:
-    A Google Credentials object.
-  """
-
-  # Get the base64 encoded secret from the environment
-  base64_encoded_key = os.environ.get(secret_name)
-
-  # Decode the base64 string
-  decoded_key = base64.b64decode(base64_encoded_key).decode('utf-8')
-
-  # Parse the JSON
-  key_dict = json.loads(decoded_key)
-
-  # Create Google Credentials object
-  credentials = Credentials.from_service_account_info(key_dict)
-
-  return credentials
-
-secret_name = 'GCP_CREDENTIALS'  # Replace with your secret name
-credentials = read_gcp_sa_key_from_secret(secret_name)
+credentials_json = os.getenv("GCP_CREDENTIALS")
+credentials = service_account.Credentials.from_service_account_info(
+    json.loads(credentials_json),
+    scopes=["https://www.googleapis.com/auth/cloud-platform"],
+)
 
 def fetch_product_list(cat_id, cat):
     """

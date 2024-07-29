@@ -9,12 +9,11 @@ import pandas_gbq
 from google.oauth2 import service_account
 
 credentials_file = os.getenv("GCP_CREDENTIALS")
+print(credentials_file)
 credentials = service_account.Credentials.from_service_account_info(
     credentials_file,
     scopes=["https://www.googleapis.com/auth/cloud-platform"],
 )
-
-
 
 def fetch_product_list(cat_id, cat):
     """

@@ -3,6 +3,7 @@ pandas-gbq
 
 pyarrow
 numpy 
+cvxpy
 scipy 
 sympy
 statsmodels 

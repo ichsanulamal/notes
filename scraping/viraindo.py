@@ -12,7 +12,6 @@ credentials = service_account.Credentials.from_service_account_info(
     scopes=["https://www.googleapis.com/auth/cloud-platform"],
 )
 
-
 def fetch_data(url):
     """
     Fetches HTML data from a given URL and returns it as a DataFrame.

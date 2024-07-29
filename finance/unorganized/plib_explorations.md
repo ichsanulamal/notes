@@ -1,5 +1,5 @@
-Gekko
+Gekko, ccxt
 
-Freqtrade
+[Freqtrade](https://github.com/freqtrade/freqtrade)
 
-https://github.com/jesse-ai/jesse
+[Jesse](https://github.com/jesse-ai/jesse)

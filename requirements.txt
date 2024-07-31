@@ -27,6 +27,7 @@ fake-useragent
 
 pendulum   
 lxml
+jupyter
 
 geopandas
 fiona 

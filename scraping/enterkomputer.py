@@ -9,7 +9,6 @@ import pandas_gbq
 import re
 
 from google.oauth2 import service_account
-
 credentials_json = os.getenv("GCP_CREDENTIALS")
 try:
     credentials = service_account.Credentials.from_service_account_info(
@@ -17,7 +16,10 @@ try:
         scopes=["https://www.googleapis.com/auth/cloud-platform"],
     )
 except TypeError:
-    credentials = None
+    credentials = service_account.Credentials.from_service_account_file(
+    credentials_json,
+    scopes=["https://www.googleapis.com/auth/cloud-platform"],
+    )
 
 # def generate_token():
 

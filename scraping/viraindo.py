@@ -9,10 +9,16 @@ import pandas_gbq
 
 from google.oauth2 import service_account
 credentials_json = os.getenv("GCP_CREDENTIALS")
-credentials = service_account.Credentials.from_service_account_info(
-    json.loads(credentials_json),
+try:
+    credentials = service_account.Credentials.from_service_account_info(
+        json.loads(credentials_json),
+        scopes=["https://www.googleapis.com/auth/cloud-platform"],
+    )
+except TypeError:
+    credentials = service_account.Credentials.from_service_account_file(
+    credentials_json,
     scopes=["https://www.googleapis.com/auth/cloud-platform"],
-)
+    )
 
 def fetch_data(url):
     """

@@ -14,7 +14,7 @@ try:
         json.loads(credentials_json),
         scopes=["https://www.googleapis.com/auth/cloud-platform"],
     )
-except TypeError:
+except:
     credentials = service_account.Credentials.from_service_account_file(
     credentials_json,
     scopes=["https://www.googleapis.com/auth/cloud-platform"],

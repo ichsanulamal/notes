@@ -7,5 +7,5 @@ dbt_pcomp:
       project: ichsanul-dev
       dataset: de_zoomcamp
       threads: 4 # Must be a value of 1 or greater
-      keyfile: "{{ env_var('GCP_CREDENTIALS') }}"
+      keyfile: "{{ env_var('GCP_CREDENTIALS_FILE') }}"
       job_execution_timeout_seconds: 1800

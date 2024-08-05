@@ -6,6 +6,7 @@ import json
 import requests
 from fake_useragent import UserAgent
 import pandas_gbq
+import re
 
 from google.oauth2 import service_account
 
@@ -18,12 +19,25 @@ try:
 except TypeError:
     credentials = None
 
-def generate_cookies():
-    session = requests.Session()
-    response = session.get('https://www.enterkomputer.com')
-    cookies = session.cookies.get_dict()
-    str_cookies = f'ess={cookies['ess']}; csrf_cookie_name={cookies['csrf_cookie_name']}'
-    return str_cookies
+# def generate_token():
+
+session = requests.Session()
+response = session.get('https://www.enterkomputer.com/category/17/processor')
+
+# cookies
+cookies = session.cookies.get_dict()
+str_cookies = f'ess={cookies['ess']}; csrf_cookie_name={cookies['csrf_cookie_name']}'
+
+# token 
+token_pattern = r'data-api-token="([^"]+)"'
+token_match = re.search(token_pattern, response.text)
+token = token_match.group(1)
+
+# signature
+signature_pattern = r'data-api-signature="([^"]+)"'
+signature_match = re.search(signature_pattern, response.text)
+signature = signature_match.group(1)
+
 
 def fetch_product_list(cat_id, cat):
     """
@@ -45,7 +59,7 @@ def fetch_product_list(cat_id, cat):
             "X-Requested-With": "XMLHttpRequest",
             "Origin": "https://www.enterkomputer.com",
             "Referer": f"https://www.enterkomputer.com/category/{cat_id}/{cat}",
-            "Cookie": generate_cookies(),
+            "Cookie": str_cookies,
             "Sec-Fetch-Dest": "empty",
             "Sec-Fetch-Mode": "cors",
             "Sec-Fetch-Site": "same-origin"
@@ -62,8 +76,8 @@ def fetch_product_list(cat_id, cat):
             "MTAGS": "",
             "MSGMN": "category",
             "MPAGE": page_counter,
-            "token": "U2FsdGVkX1-E55sT1JEmUtTtgjHvzgK98PZU8pKsTjQf8t2cV6U0Rrrd5ijzmdtRiKOvKb944B267vLzsZdvag",
-            "signature": "6f2f8494bc4194daf124fbd20862b729",
+            "token": token,
+            "signature": signature,
         }
 
         json_response = json.loads(requests.post(url, headers=headers, json=data).text)

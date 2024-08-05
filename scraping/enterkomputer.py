@@ -10,8 +10,8 @@ import re
 
 from google.oauth2 import service_account
 
+credentials_json = os.getenv("GCP_CREDENTIALS")
 try:
-    credentials_json = os.getenv("GCP_CREDENTIALS")
     credentials = service_account.Credentials.from_service_account_info(
         json.loads(credentials_json),
         scopes=["https://www.googleapis.com/auth/cloud-platform"],
@@ -26,7 +26,7 @@ response = session.get('https://www.enterkomputer.com/category/17/processor')
 
 # cookies
 cookies = session.cookies.get_dict()
-str_cookies = f'ess={cookies['ess']}; csrf_cookie_name={cookies['csrf_cookie_name']}'
+str_cookies = f"ess={cookies['ess']}; csrf_cookie_name={cookies['csrf_cookie_name']}"
 
 # token 
 token_pattern = r'data-api-token="([^"]+)"'

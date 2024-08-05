@@ -1,4 +1,4 @@
-dbt_instance:
+dbt_pcomp:
   target: dev
   outputs:
     dev:

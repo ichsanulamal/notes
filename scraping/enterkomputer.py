@@ -8,11 +8,22 @@ from fake_useragent import UserAgent
 import pandas_gbq
 
 from google.oauth2 import service_account
-credentials_json = os.getenv("GCP_CREDENTIALS")
-credentials = service_account.Credentials.from_service_account_info(
-    json.loads(credentials_json),
-    scopes=["https://www.googleapis.com/auth/cloud-platform"],
-)
+
+try:
+    credentials_json = os.getenv("GCP_CREDENTIALS")
+    credentials = service_account.Credentials.from_service_account_info(
+        json.loads(credentials_json),
+        scopes=["https://www.googleapis.com/auth/cloud-platform"],
+    )
+except TypeError:
+    credentials = None
+
+def generate_cookies():
+    session = requests.Session()
+    response = session.get('https://www.enterkomputer.com')
+    cookies = session.cookies.get_dict()
+    str_cookies = f'ess={cookies['ess']}; csrf_cookie_name={cookies['csrf_cookie_name']}'
+    return str_cookies
 
 def fetch_product_list(cat_id, cat):
     """
@@ -30,19 +41,14 @@ def fetch_product_list(cat_id, cat):
             "User-Agent": ua.random,
             "Accept": "application/json",
             "Accept-Language": "en-US,en;q=0.5",
-            "Accept-Encoding": "gzip, deflate, br",
             "Content-Type": "application/json",
             "X-Requested-With": "XMLHttpRequest",
             "Origin": "https://www.enterkomputer.com",
-            "DNT": "1",
-            "Sec-GPC": "1",
-            "Connection": "keep-alive",
             "Referer": f"https://www.enterkomputer.com/category/{cat_id}/{cat}",
-            "Cookie": "ess=a63e8c792788789ed3ca4488338282c2666be8f4; csrf_cookie_name=2221d451c939048e8e79b219af64d8ea",
+            "Cookie": generate_cookies(),
             "Sec-Fetch-Dest": "empty",
             "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Site": "same-origin",
-            "TE": "trailers",
+            "Sec-Fetch-Site": "same-origin"
         }
 
         data = {
@@ -57,7 +63,7 @@ def fetch_product_list(cat_id, cat):
             "MSGMN": "category",
             "MPAGE": page_counter,
             "token": "U2FsdGVkX1-E55sT1JEmUtTtgjHvzgK98PZU8pKsTjQf8t2cV6U0Rrrd5ijzmdtRiKOvKb944B267vLzsZdvag",
-            "signature": "54f641b51cc26b51894b06dbdb55b4b3",
+            "signature": "6f2f8494bc4194daf124fbd20862b729",
         }
 
         json_response = json.loads(requests.post(url, headers=headers, json=data).text)

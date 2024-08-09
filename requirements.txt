@@ -16,7 +16,10 @@ colour
 mplfinance
 yfinance
 world-bank-data
+backtrader
+
 ccxt
+web3
 
 psycopg2-binary
 sqlalchemy

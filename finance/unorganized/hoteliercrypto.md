@@ -1,3 +1,14 @@
+[[Federal Reserve Reverse Repo (RRP)]]
+
+[[Federal Reserve Financial Stress Index (FSI)]]
+
+[[Purchasing Managers' Index (PMI)]]
+
+[[Secured Overnight Financing Rate (SOFR)]]
+
+[[U.S. Dollar Index (DXY)]]
+
+
 -- 2024-06-27
 
 **Bitcoin Drop - Guys, it's normal**

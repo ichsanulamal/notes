@@ -1,9 +1,9 @@
-{{
-  config(
-    materialized = 'table'
-  )
-}}
+{{ config(materialized="table") }}
 
-select * 
-from {{ source('dezoomcamp', 'enterkomputer_raw') }}
-QUALIFY ROW_NUMBER() OVER (PARTITION BY PNAME, KNAME, PPRCZ ORDER BY inserted_at ASC nulls last) = 1 -- dedup
+select *
+from {{ source("dezoomcamp", "enterkomputer_raw") }}
+qualify
+    row_number() over (
+        partition by pname, kname, pprcz order by inserted_at asc nulls last
+    )
+    = 1  -- dedup

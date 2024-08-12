@@ -1,11 +1,32 @@
-with final as (
-    select * from (select * from {{ ref('enterkomputer') }}
-union all
-select * from {{ ref('viraindo') }})
-QUALIFY ROW_NUMBER() OVER (PARTITION BY product_name, category, price, `source` ORDER BY inserted_at ASC nulls last) = 1
-)
+with
+    final as (
+        select *
+        from
+            (
+                select *
+                from {{ ref("enterkomputer") }}
+                union all
+                select *
+                from {{ ref("viraindo") }}
+            )
+        qualify
+            row_number() over (
+                partition by product_name, category, price, `source`
+                order by inserted_at asc nulls last
+            )
+            = 1
+    )
 
-select *,
-    ((price - LAG(price) OVER (PARTITION BY product_name, category, source ORDER BY inserted_at)) / LAG(price) OVER (PARTITION BY product_name, category, source ORDER BY inserted_at)) * 100 AS percentage_change
-from final 
-
+select
+    *,
+    (
+        (
+            price - lag(price) over (
+                partition by product_name, category, source order by inserted_at
+            )
+        ) / lag(price) over (
+            partition by product_name, category, source order by inserted_at
+        )
+    )
+    * 100 as percentage_change
+from final

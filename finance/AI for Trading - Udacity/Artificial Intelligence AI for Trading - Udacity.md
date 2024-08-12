@@ -8,6 +8,11 @@
 
 [[Reinforcement Learning]]
 
+
+---
+
+[[Time Series and Cross Sectional Risk Models]]
+
 ## Part 01-Module 01-Lesson 01_Welcome to the Nanodegree Program
 
 ### 01. M1L1 01 Welcome V1-W2R32yXgwcg.en

@@ -5,6 +5,7 @@ import json
 import pandas as pd
 from io import StringIO
 from datetime import datetime
+from fake_useragent import UserAgent
 import pandas_gbq
 
 from google.oauth2 import service_account
@@ -24,8 +25,10 @@ def fetch_data(url):
     """
     Fetches HTML data from a given URL and returns it as a DataFrame.
     """
+    ua = UserAgent()
+
     header = {
-        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36",
+        "User-Agent": ua.random,
         "X-Requested-With": "XMLHttpRequest",
     }
     response = requests.get(url, headers=header)

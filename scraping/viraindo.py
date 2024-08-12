@@ -82,7 +82,7 @@ def main():
     dataframes = {}
     for link in links:
         category = link.removesuffix(".html")
-        url = f"https://viraindo.net/{link}"
+        url = f"https://viraindo.com/{link}" # net
 
         try:
             df = fetch_data(url)

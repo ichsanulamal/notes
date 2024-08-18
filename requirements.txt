@@ -13,6 +13,7 @@ nbformat
 plotly
 colour
 
+TA-Lib
 mplfinance
 yfinance
 world-bank-data

@@ -9,6 +9,7 @@ sympy
 statsmodels 
 
 matplotlib 
+seaborn
 nbformat
 plotly
 colour

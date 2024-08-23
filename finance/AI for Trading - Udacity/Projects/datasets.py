@@ -3,59 +3,43 @@ import pandas as pd
 import numpy as np
 from datetime import date
 
-def load_dict_from_pickle(filename):
-    """
-    Load a dictionary with DataFrame values from a pickle file.
-    
-    Parameters
-    ----------
-    filename : str
-        The path to the file from which the data will be loaded.
-    
-    Returns
-    -------
-    data_dict : dict
-        Dictionary with string keys and DataFrame values.
-    """
-    with open(filename, 'rb') as f:
-        data_dict = pickle.load(f)
-    return data_dict
-
-def get_ohlcvs(from_date=None, to_date=None):
+def get_ohlcvs(start_date=None, end_date=None):
     # Example usage
-    ohlcvs = load_dict_from_pickle('input.pkl')
+    df = pd.read_csv('data.csv', index_col='timestamp')
     # print(ohlcvs)
 
-    for k in list(ohlcvs.keys()):
-        if k in ['steth',
+    exclude_list = ['steth',
                 'weeth',
                 'ezeth',
                 'reth',
                 'meth',
                 'eeth',
                 'rseth',
+                'wbtc',
                 'dai',
-                'wbtc']:
-            del ohlcvs[k]
+                ]
 
-        if 'usd' in k:
-            del ohlcvs[k]
+    df = df[~df['ticker'].isin(exclude_list)]
+    df = df[~df['ticker'].str.contains('usd', case=False, na=False)]
 
-    if from_date != None:
-        if to_date == None:
-            to_date = date.today()
+    if start_date != None:
+        if end_date == None:
+            end_date = date.today()
 
-        for key in ohlcvs.keys():
-            df:pd.DataFrame = ohlcvs[key]
-            ohlcvs[key] = df.loc[from_date:to_date, :]
+        df = df[(df.index >= start_date) & (df.index <= end_date)]
 
-    return ohlcvs
+    return df
 
-def get_closes(ohlcvs):
-    return pd.DataFrame({ticker: df['close'] for ticker, df in ohlcvs.items()}) 
+def get_closes(df):
+    return df.pivot_table(index=df.index, columns='ticker', values='close')
+
+
+def get_returns(closes_df: pd.DataFrame):
+    return closes_df.pct_change(fill_method=None)
 
 def get_log_returns(closes_df: pd.DataFrame):
     return np.log(closes_df / closes_df.shift(1))
 
+# print(get_closes(get_ohlcvs()))
 
     

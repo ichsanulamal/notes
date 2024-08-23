@@ -39,3 +39,7 @@ fiona
 shapely
 pyproj 
 rtree 
+
+
+# external
+pyforbes

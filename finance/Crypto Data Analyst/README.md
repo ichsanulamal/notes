@@ -1,3 +1,5 @@
+# Crypto Data Analyst
+
 [[Blockchains]]
 
 [[Knowledge Domains]]

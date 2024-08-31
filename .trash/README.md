@@ -1,6 +1,8 @@
-# useless projects
+# Useless Projects
 
-[[crypto-feeds/README]]
+## general
+
+[[visualizations/README]]
 
 [[gutenberg/README]]
 
@@ -8,14 +10,24 @@
 
 [[reddit-mental-health-analysis/README]]
 
-[[visualizations/README]]
+[[crypto-feeds/README]]
+
+## tech
+
+[[docker-compose/README]]
 
 ## indonesia
 
 [[pemilu/README]]
+
+[[indonesia-religious-diversity-analysis/README]]
 
 ## fasilkom
 
 [[tracking-performance-fasilkom-organization/README]]
 
 [[fasilkomui-blogs/README]]
+
+[[asdosan_scele/README]]
+
+

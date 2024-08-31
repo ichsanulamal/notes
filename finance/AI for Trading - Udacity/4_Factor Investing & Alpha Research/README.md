@@ -1,3 +1,5 @@
+# Factor Investing & Alpha Research
+
 141 [[Factors]]
 
 142 [[Factor Models and Types of Factors]]

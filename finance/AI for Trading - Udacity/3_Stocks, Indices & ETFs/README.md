@@ -1,3 +1,5 @@
+# Stocks, Indices & ETFs
+
 131 [[Stocks, Indices, Funds]]
 
 132 [[ETFs]]

@@ -6,7 +6,7 @@
 
 ### AI for Trading
 
-[[Artificial Intelligence AI for Trading - Udacity]]
+[[AI for Trading - Udacity/README]]
 
 [[Financial Engineering and Artificial Intelligence in Python - TLP Udemy]]
 

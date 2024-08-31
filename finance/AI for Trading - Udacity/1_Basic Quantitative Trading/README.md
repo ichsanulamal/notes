@@ -1,3 +1,5 @@
+# Basic Quantitative Trading
+
 114 [[Stock Prices]]
 
 115 [[Market Mechanics]]

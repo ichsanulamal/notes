@@ -1,15 +1,22 @@
-Course 1: [[Basic Quantitative Trading]]
+# AI for Trading - Udacity
 
-Course 2: [[Advanced Quantitative Trading]]
+Course 1: [[1_Basic Quantitative Trading/README]]
 
-Course 3: [[Stocks, Indices & ETFs]]
+Course 2: [[2_Advanced Quantitative Trading/README]]
 
-Course 4: [[Factor Investing & Alpha Research]]
+Course 3: [[3_Stocks, Indices & ETFs/README]]
+
+Course 4: [[4_Factor Investing & Alpha Research/README]]
 
 
 
 715 [[Introduction to Kalman Filters]]
 
+[[Linear Algebra]]
+
+[[Introduction to Neural Networks]]
+
+[[Indicators]]
 
 extras
 

@@ -1,4 +1,4 @@
-## Finance
+# Finance
 
 [[Financial Engineering and Risk Management Part I - Coursera]]
 

@@ -1,1 +1,1 @@
-# docker-compose for many apps
+# docker-compose

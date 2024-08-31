@@ -1,1 +1,0 @@
-TODO: Activate GCP free version

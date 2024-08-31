@@ -1,4 +1,4 @@
-# Solusi Data Engineering Technical Assessment
+# LinkAja - Data Engineer
 
 1. Buatlah skrip Python yang dapat menghasilkan pola segitiga yang berisi angka dari barisan Golomb (https://oeis.org/A001462) dengan argumen baris sebagai input Berikan penjelasan langkah-langkah detil dan analisis algoritma dalam comment pada skrip.
 

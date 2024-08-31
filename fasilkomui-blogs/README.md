@@ -1,1 +1,1 @@
-# List of Blogs by Alumni of the Faculty of Computer Science, University of Indonesia
+# Blogs by Faculty of Computer Science, University of Indonesia Alumni

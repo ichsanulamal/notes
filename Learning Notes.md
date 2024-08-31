@@ -1,33 +1,39 @@
-# Finance
+# Learning Notes
+
+### Systematic Trading
 
 [[Financial Engineering and Risk Management Part I - Coursera]]
 
 [[Financial Engineering and Risk Management Part II - Coursera]]
 
-### AI for Trading
-
 [[AI for Trading - Udacity/README]]
 
 [[Financial Engineering and Artificial Intelligence in Python - TLP Udemy]]
 
-## DeFi
+### DeFi
 
 [[Decentralized Finance (DeFi) The Future of Finance Specialization - Coursera]]
 
-## Blockchain Development
+### Blockchain Development
 
 [[Blockchain Developer Nanodegree Program - Udacity]]
 
-[[Blockchain]]
+## Virtual Internships
 
-## Sources 
+[[forage-JPMC_quantitative-research/README]]
 
-### Data Gathering
+[[rakamin-muamalat/README]]
 
-- ccxt
+[[rakamin-btps/README]]
 
-### Backtest
+[[rakamin-idx/README]]
 
-- Gekko
-- [Freqtrade](https://github.com/freqtrade/freqtrade)
-- [Jesse](https://github.com/jesse-ai/jesse)
+# Others
+
+[[scraping/README]]
+
+[[parallel_programming/README]]
+
+[[science_computation/README]]
+
+[[Crypto Data Analyst/README]]

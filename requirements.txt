@@ -7,6 +7,7 @@ cvxpy
 scipy 
 sympy
 statsmodels 
+scikit-learn
 
 matplotlib 
 seaborn

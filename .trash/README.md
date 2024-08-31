@@ -28,6 +28,6 @@
 
 [[fasilkomui-blogs/README]]
 
-[[asdosan_scele/README]]
+[[asdosan-scele/README]]
 
 

@@ -4,8 +4,18 @@
 
 [[The Angel Philosopher Naval Ravikant on Reading, Making Decisions, Habits, and the Purpose of Life]]
 
-[[David Deutsch and Naval Ravikant — The Fabric of Reality And Much More | The Tim Ferriss Show]]
+[[David Deutsch The Fabric of Reality]]
 
 [[Naval Ravikant - Intellectual Curiosity & 3 STEP LIFE FRAMEWORK]]
 
 [[David Goggins PUSH YOURSELF EVERYDAY]]
+
+
+## Hosting
+
+- [[Tim Ferriss Tools of Titans]]
+- [[BLOCKCON Taleb & Naval Ravikant]]
+- [[Nick Szabo The Quiet Master of Cryptocurrency]]
+- [[Jerzy Gregorek Tim Ferriss]]
+- [[Neal Stephenson Blockstack Summit 2019]]
+

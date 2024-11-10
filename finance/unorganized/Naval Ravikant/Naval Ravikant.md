@@ -11,7 +11,7 @@
 [[David Goggins PUSH YOURSELF EVERYDAY]]
 
 
-## Hosting
+## Hostings
 
 - [[Tim Ferriss Tools of Titans]]
 - [[BLOCKCON Taleb & Naval Ravikant]]
@@ -19,3 +19,8 @@
 - [[Jerzy Gregorek Tim Ferriss]]
 - [[Neal Stephenson Blockstack Summit 2019]]
 
+
+TODO
+
+[[How to Angel Invest, Part 1]]
+[[How to Angel Invest, Part 2]]

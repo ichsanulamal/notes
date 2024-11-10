@@ -1,3 +1,5 @@
+# Nassim Taleb
+
 **MINI LECTURES IN PROBABILITY**
 
 ## MINI-LESSON 1: Standard Deviation

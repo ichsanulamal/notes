@@ -1,3 +1,5 @@
+# Dimitri Bianco
+
 ## Why Independent Quants Don't Exist
 
 **Can You Be an Independent Quant?**

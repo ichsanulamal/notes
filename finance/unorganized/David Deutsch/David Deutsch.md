@@ -1,4 +1,6 @@
-# Why It’s Good To Be Wrong
+# David Deutsch
+
+## Why It’s Good To Be Wrong
 
 ### Fallibilism
 

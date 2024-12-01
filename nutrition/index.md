@@ -164,3 +164,91 @@ Drinking fluids throughout the day is essential for hydration and overall health
 - **Black coffee** or coffee with a small amount of milk/sugar is a good option to avoid extra calories.
 
 This plan balances hydration with your coffee intake while supporting your goal of building muscle and improving energy. Let me know if you’d like to adjust anything!
+
+## weekly buying plan
+
+Tentu! Berikut adalah daftar bahan makanan yang dapat Anda beli untuk memasak makanan sederhana dengan rice cooker dan panci listrik selama satu minggu. Saya akan fokus pada resep yang tidak memerlukan penggorengan atau teknik memasak yang kompleks. Semua bahan mudah ditemukan di pasar atau supermarket di Semarang, Jawa Tengah.
+
+### Daftar Belanja Mingguan
+
+#### **Bahan Pokok**
+1. **Beras** (5 kg)  
+   Untuk membuat nasi menggunakan rice cooker.
+   
+2. **Mie Instan** (5-7 bungkus)  
+   Untuk menu cepat dan praktis.
+
+3. **Kentang** (5-6 buah)  
+   Dapat dimasak dalam panci listrik atau rice cooker, bisa dibuat berbagai hidangan.
+
+4. **Telur** (1-2 lusin)  
+   Sumber protein yang mudah dimasak, misalnya telur rebus atau omelet menggunakan panci listrik.
+
+5. **Sayuran**:
+   - **Wortel** (3-4 buah)  
+   - **Bayam** (1 ikat)  
+   - **Sawi** (1 ikat)  
+   - **Kacang panjang** (1 ikat)  
+   Sayuran ini dapat dimasak dengan berbagai cara seperti direbus atau diproses dengan panci listrik.
+
+#### **Protein**
+1. **Ayam** (1-2 potong paha atau dada ayam, bisa diganti dengan daging sapi jika ingin variasi)  
+   Bisa dimasak dengan rice cooker atau panci listrik, misalnya ayam kukus atau ayam tumis sederhana.
+
+2. **Tahu dan Tempe**  
+   Sumber protein nabati yang mudah dimasak, bisa direbus, dikukus, atau dipanaskan dalam panci listrik.
+
+3. **Ikan** (misalnya ikan kembung atau tongkol)  
+   Bisa dimasak dengan cara dikukus atau direbus dalam panci listrik.
+
+#### **Bumbu dan Penyedap**
+1. **Bawang merah** (1 ikat)  
+2. **Bawang putih** (1 ikat)  
+3. **Jahe** (1 ruas)  
+4. **Kunyit** (1 ruas)  
+5. **Kecap manis**  
+6. **Garam**  
+7. **Merica**  
+8. **Kaldu ayam atau sapi** (untuk rasa lebih enak)  
+9. **Saus sambal** (optional, untuk yang suka pedas)
+
+#### **Makanan Pendamping**
+1. **Tempe Mendoan** (bisa beli siap saji atau tempe mendoan beku)  
+2. **Bumbu instant atau paket masakan** (untuk variasi rasa, jika ingin memasak lebih praktis)
+
+---
+
+### Rencana Menu Mingguan (Sederhana dan Mudah Dimasak)
+
+#### **Hari 1: Nasi + Ayam Kukus + Sayur Bayam**
+- **Ayam Kukus**: Gunakan panci listrik untuk mengukus ayam yang sudah dibumbui dengan garam, merica, dan sedikit kecap manis.
+- **Nasi**: Gunakan rice cooker.
+- **Sayur Bayam**: Rebus bayam menggunakan panci listrik.
+
+#### **Hari 2: Mie Instan + Telur Rebus**
+- **Mie Instan**: Masak mie dengan air mendidih di panci listrik.
+- **Telur Rebus**: Rebus telur di panci listrik hingga matang.
+
+#### **Hari 3: Nasi + Tahu Tempe + Kacang Panjang**
+- **Tahu Tempe Kukus**: Kukus tahu dan tempe di panci listrik.
+- **Kacang Panjang**: Rebus kacang panjang dengan bumbu sederhana.
+
+#### **Hari 4: Nasi + Ikan Kukus + Kentang Rebus**
+- **Ikan Kukus**: Kukus ikan dengan bumbu garam, merica, dan sedikit kecap.
+- **Kentang Rebus**: Rebus kentang di panci listrik.
+
+#### **Hari 5: Nasi + Ayam Rebus + Sayur Sawi**
+- **Ayam Rebus**: Rebus ayam dengan bumbu bawang putih, bawang merah, dan jahe di panci listrik.
+- **Sayur Sawi**: Rebus sawi dengan kaldu ayam di panci listrik.
+
+#### **Hari 6: Mie Instan + Sayur Wortel**
+- **Mie Instan**: Masak seperti biasa.
+- **Sayur Wortel**: Rebus wortel di panci listrik sebagai pelengkap.
+
+#### **Hari 7: Nasi + Tempe Goreng + Bayam**
+- **Tempe Goreng**: Tempe bisa digoreng di rice cooker dengan sedikit minyak atau di panci listrik.
+- **Bayam Rebus**: Rebus bayam sebagai pelengkap.
+
+---
+
+Dengan bahan-bahan di atas, Anda bisa menikmati berbagai hidangan simpel namun bergizi sepanjang minggu. Jangan lupa untuk menyesuaikan bumbu dan bahan sesuai selera pribadi, dan Anda bisa mengganti atau menambah bahan lainnya sesuai dengan kebutuhan! Selamat mencoba!

@@ -1,6 +1,7 @@
 ## Tech & Startup
 
 [[Sam Altman]]
+][[Lecture 1 - How to Start a Startup (Sam Altman, Dustin Moskovitz)]]
 
 ## Finance
 

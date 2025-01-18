@@ -1,7 +1,6 @@
 pandas
 pandas-gbq
 
-pyarrow
 numpy 
 cvxpy
 scipy 
@@ -11,29 +10,20 @@ scikit-learn
 
 matplotlib 
 seaborn
-nbformat
 plotly
+
 colour
-
-# TA-Lib
-mplfinance
-yfinance
-world-bank-data
-backtrader
-
-ccxt
-web3
-
-psycopg2-binary
-sqlalchemy
-
-fake-useragent
-beautifulsoup4  
-fake-useragent
-
+pyarrow
 pendulum   
 lxml
 jupyter
+nbformat
+
+beautifulsoup4
+fake-useragent
+
+psycopg2-binary
+sqlalchemy
 
 geopandas
 fiona 
@@ -41,6 +31,3 @@ shapely
 pyproj 
 rtree 
 
-
-# external
-pyforbes

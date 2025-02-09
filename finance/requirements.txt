@@ -1,4 +1,4 @@
-TA-Lib
+# TA-Lib
 mplfinance
 yfinance
 world-bank-data
